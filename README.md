@@ -52,9 +52,9 @@ The instructions here are only for a local environment, if you want to deploy pl
 
 ## Environment Variables
 
-To run this project, you must copy the env folder to the root of the project as .env and change the variables as you like.
+You only have to change the values inside the .env folder as you wish.
 
-`env`
+`.env`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
