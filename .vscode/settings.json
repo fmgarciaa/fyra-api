@@ -3,6 +3,8 @@
         "Anytown",
         "Browsable",
         "EEUU",
-        "fmgarcia"
+        "fmgarcia",
+        "Gunicorn",
+        "Uvicorn"
     ]
 }

@@ -4,6 +4,8 @@
 from django.conf import settings
 from django.contrib import admin
 from django.urls import path, include
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.conf.urls.static import static
 
 urlpatterns = [
     # Django Admin
@@ -17,4 +19,8 @@ urlpatterns = [
     path('', include(('fyra.orders.urls', 'orders'), namespace='orders')),
     path('', include(('fyra.reports.urls', 'reports'), namespace='reports')),
     path('', include(('fyra.reports.urls', 'stats'), namespace='stats')),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+if settings.DEBUG:
+    # Static file serving when using Gunicorn + Uvicorn for local web socket development
+    urlpatterns += staticfiles_urlpatterns()

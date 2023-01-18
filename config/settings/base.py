@@ -142,7 +142,7 @@ EMAIL_BACKEND = env(
 
 # ADMIN
 ADMIN_URL = "admin/"
-ADMINS = [("""Franklin Garcia""", "fm@fyra.com")]
+ADMINS = [("""Franklin Garcia""", "fm-garcia@outlook.com")]
 MANAGERS = ADMINS
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
@@ -168,8 +168,7 @@ CELERY_TASK_SEND_SENT_EVENT = True
 # django-rest-framework
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': (
-        'rest_framework.renderers.JSONRenderer',
-        'rest_framework.renderers.BrowsableAPIRenderer'
+        'rest_framework.renderers.JSONRenderer'
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
