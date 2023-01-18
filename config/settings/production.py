@@ -98,7 +98,7 @@ ANYMAIL = {
 
 # Collectfast
 # ------------------------------------------------------------------------------
-INSTALLED_APPS = ["collectfast", "django_extensions"] + INSTALLED_APPS  # noqa F405
+INSTALLED_APPS = ["collectfast"] + INSTALLED_APPS  # noqa F405
 
 # LOGGING
 # ------------------------------------------------------------------------------

@@ -44,6 +44,7 @@ THIRD_PARTY_APPS = [
     "rest_framework.authtoken",
     "django_celery_beat",
     "django_filters",
+    "django_extensions"
 ]
 
 LOCAL_APPS = [
@@ -168,7 +169,7 @@ CELERY_TASK_SEND_SENT_EVENT = True
 # django-rest-framework
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': (
-        'rest_framework.renderers.JSONRenderer'
+        'rest_framework.renderers.JSONRenderer',
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
